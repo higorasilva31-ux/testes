@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #1c2b45;
+}
+
+
+/* IMAGEM */
+
+.imagem {
+    min-height: 100vh;
+    background-image: url('../img/senac-sbc.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 40, 100, .78),
+        rgba(0, 40, 100, .25)
+    );
+}
+
+.conteudo-imagem {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 80px;
+    color: white;
+    margin-top: 20%;
+}
+
+.localizacao {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,.6);
+    border-radius: 30px;
+    padding: 9px 16px;
+    margin-bottom: 25px;
+}
+
+.localizacao i {
+    color: #f58220;
+}
+
+.conteudo-imagem h1 {
+    font-size: 58px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.conteudo-imagem h1 span {
+    color: #f58220;
+}
+
+.conteudo-imagem p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 520px;
+}
+
+
+/* LOGIN */
+
+.login-box {
+    width: 100%;
+    max-width: 500px;
+    padding: 45px;
+}
+
+.logo-senac {
+    font-size: 58px;
+    font-weight: 700;
+    color: #064da8;
+    line-height: 1;
+}
+
+.login-box small {
+    color: #064da8;
+}
+
+.login-box h2 {
+    font-weight: 700;
+    color: #172b4d;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.input-group-text {
+    background: white;
+    border-right: none;
+    color: #68758a;
+}
+
+.form-control {
+    height: 52px;
+    border-left: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #064da8;
+}
+
+.input-group:focus-within .input-group-text {
+    border-color: #064da8;
+}
+
+
+/* LINKS */
+
+.esqueci {
+    color: #064da8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.esqueci:hover {
+    color: #f58220;
+}
+
+
+/* BOTÃO */
+
+.btn-login {
+    height: 52px;
+    background: #064da8;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-login:hover {
+    background: #043c85;
+    color: white;
+}
+
+.btn-login i {
+    margin-left: 8px;
+}
+
+
+/* DIVISOR */
+
+.divisor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #999;
+}
+
+.divisor::before,
+.divisor::after {
+    content: "";
+    height: 1px;
+    background: #ddd;
+    flex: 1;
+}
+
+
+/* GOOGLE */
+
+.btn-google {
+    height: 50px;
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+}
+
+.btn-google:hover {
+    background: #f7f7f7;
+}
+
+.btn-google i {
+    margin-right: 10px;
+}
+
+
+/* CADASTRO */
+
+.cadastro {
+    margin-top: 25px;
+    color: #68758a;
+}
+
+.cadastro a {
+    color: #064da8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cadastro a:hover {
+    color: #f58220;
+}
+
+
+/* RECURSOS */
+
+.recursos {
+    border-top: 1px solid #eee;
+}
+
+.recursos i {
+    display: block;
+    font-size: 23px;
+    color: #064da8;
+    margin-bottom: 8px;
+}
+
+.recursos small {
+    display: block;
+    color: #68758a;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.copyright {
+    color: #aaa;
+    font-size: 12px;
+    margin-top: 35px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 991px) {
+
+    .imagem {
+        min-height: 500px;
+    }
+
+    .conteudo-imagem {
+        padding: 50px;
+        margin-top: 15%;
+    }
+
+    .conteudo-imagem h1 {
+        font-size: 45px;
+    }
+
+    .login-box {
+        padding: 50px 30px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .imagem {
+        min-height: 400px;
+    }
+
+    .conteudo-imagem {
+        padding: 30px;
+        margin-top: 10%;
+    }
+
+    .conteudo-imagem h1 {
+        font-size: 38px;
+    }
+
+    .conteudo-imagem p {
+        font-size: 15px;
+    }
+
+}
