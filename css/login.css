@@ -14,7 +14,15 @@ body {
 
 .imagem {
     min-height: 100vh;
-    background-image: url('../img/senac-sbc.jpg');
+    background-image: url('../img/SenacL.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.imagemC {
+    min-height: 100vh;
+    background-image: url('../img/SenacL.png');
     background-size: cover;
     background-position: center;
     position: relative;
