@@ -28,8 +28,6 @@
         }else{
             $contas = [
                 ["tabela" => "adm", "status" => "", "tipo" => "adm"],
-                ["tabela" => "funcionario", "status" => "status_fun", "tipo" => "funcionario"],
-                ["tabela" => "docentes", "status" => "status_docente", "tipo" => "docente"],
                 ["tabela" => "usuario", "status" => "status_user", "tipo" => "usuario"]
             ];
 
